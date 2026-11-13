@@ -57,6 +57,12 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define ALERT_12v_Pin GPIO_PIN_0
+#define ALERT_12v_GPIO_Port GPIOA
+#define ALERT_12v_EXTI_IRQn EXTI0_IRQn
+#define ALERT_5v_Pin GPIO_PIN_1
+#define ALERT_5v_GPIO_Port GPIOA
+#define ALERT_5v_EXTI_IRQn EXTI1_IRQn
 
 /* USER CODE BEGIN Private defines */
 

@@ -36,14 +36,15 @@
 #define alertFunctionFlag       (1u << 4)
 #define latchEnable             (1u << 0)
 
-// messages
-
+// contains an instance of the ina260 sensor, with the handle type (for HAL) and
+// an address (7-bit)
 typedef struct 
 {
     I2C_HandleTypeDef *hi2c;
     uint8_t address;
 } ina260;
 
+// holds all possible error types
 typedef enum
 {
     success,
