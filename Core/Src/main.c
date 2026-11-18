@@ -101,8 +101,8 @@ int main(void)
   /* USER CODE BEGIN 2 */
   ina260 ina12v, ina5v;
 
-  ina260_status s12v = ina260_init(&ina12, &hi2c1, address);  //WHAT IS THIS ADDRESS 
-  ina260_status s5v = ina260_init(&ina5,  &hi2c1, address);   //WHAT IS THIS ADDRESS
+  ina260_status s12v = ina260_init(&ina12, &hi2c1, 0x40);
+  ina260_status s5v = ina260_init(&ina5,  &hi2c1, 0x41);
 
   /* USER CODE END 2 */
 

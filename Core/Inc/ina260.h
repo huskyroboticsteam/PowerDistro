@@ -42,6 +42,12 @@ typedef struct
 {
     I2C_HandleTypeDef *hi2c;
     uint8_t address;
+    // ADD:
+    //  - overcurrent threshold
+    //  - overvoltage threshold
+    //  - undercurrent threshold
+    //  - undervoltage threshold
+    
 } ina260;
 
 // holds all possible error types
